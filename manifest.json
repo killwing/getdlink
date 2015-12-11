@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "GetDLink",
+    "description": "get download link for baidu pan",
+    "version": "0.1",
+    "permissions": ["http://pan.baidu.com/play/*"],
+    "content_scripts": [
+        {
+            "matches": ["http://pan.baidu.com/play/*"],
+            "js": ["main.js"]
+        }
+    ],
+    "web_accessible_resources": ["get.js"]
+}
